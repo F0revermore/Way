@@ -1,0 +1,12 @@
+mixin banner()
+  section.banner
+    +img("content", "background-picture", "jpg", 1920, 860, "Фон блока banner", "banner__background-picture")
+    .container 
+      .banner__content 
+        h1 Путешествие<br>по Европе
+        p В этом туре вы откроете для себя Европу в<br> новом свете. Вас ждет: море, горы, а также<br> потрясающая красота природы.
+        button.banner__btn
+          span смотреть тур
+          +img("svg", "arrow-bottom", "svg", 14, 14, "Иконка для кнопки", "banner__btn__svg")
+
+

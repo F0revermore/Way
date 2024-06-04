@@ -1,0 +1,82 @@
+mixin tours()
+  section.tours
+    +img("content", "slider-tab-background", "png", 1444, 1095, "Европа", "slider-tab-background")
+    .container
+      .slider-tab 
+        .slider-tab__nav 
+          span.nav__item.nav__item--active  Греция
+          span.nav__item  Албания
+          span.nav__item  Македония
+          span.nav__item  Черногория
+          span.nav__item  Хорватия
+        .slider-tab_slides 
+          .slides__slide.slides__slide--active 
+            +img("slides", "slide-background-image1", "jpg", 430, 596, "Греция", "slide-background-picture")
+            .slide__description
+              h2.slide__title Греция
+              p.slide__desc 
+                |На севере Греции находится один из<br> крупнейших комплексов монастырей,<br> расположенных на вершинах скал. Название<br> его «Метеора» буквально переводится <br>как «висящие в воздухе». Этот монастырь<br> основная цель нашего путешествия в Греции.<br> После покарения скал из песчанника и<br> обломочной горной породы, достигающих в<br> высоту 600 метров, наградой будет <br>неописуемая красота природы и атмосфера,<br> царящая в монастырях Метеоры. 
+              button.btn-order-now
+                span.button-text-content купить тур сейчас  
+            .slide__review
+              .review__title Отзывы
+              p.review__content Метеоры в Греции можно сравнить разве<br> что с Монсерратт в Испании. Такие же<br> высоченные скалы. Но здесь потрясает<br> масштаб. Огромная территория, высоко в<br> горах. Ощущение такое, как будто стоишь на<br> краю света! 
+              .review__user 
+                +img("slides", "slider-user-image1", "jpg", 38, 38, "Девушка")
+                .user__name Влада Голицина
+          .slides__slide
+            +img("slides", "slide-background-image2", "jpg", 430, 596, "Албания", "slide-background-picture")
+            .slide__description
+              h2.slide__title Албания
+              p.slide__desc 
+                |В Албании мы посетим Курорт Ксамиль. Этот<br> курорт поразит вас чистейшей водой и<br> удивительным пляжем. Вначале кажется, что<br> на пляже вас встречает обычный, правда<br> невероятно белоснежный и слишком<br> крупный песок. Однако, присмотревшись,<br> можно понять, что это не песок, а камни,<br> перетёртые до такого мелкого состояния.               
+              button.btn-order-now
+                span.button-text-content купить тур сейчас  
+            .slide__review
+              .review__title Отзывы
+              p.review__content Замечательный курорт, обязательно стоит<br> посетить. В следующий раз возьму с собой<br> сестру, чтобы тоже смогла вкусить все красоты<br> природы :)
+              .review__user 
+                +img("slides", "slider-user-image2", "jpg", 38, 38, "Девушка")
+                .user__name Маришка
+          .slides__slide
+            +img("slides", "slide-background-image3", "jpg", 430, 596, "Македония", "slide-background-picture")
+            .slide__description
+              h2.slide__title Македония
+              p.slide__desc 
+                |В Македонии нашей целью будет посетить<br> Палаошник, который расположился в<br> удивительно красивой лесистой местности<br> возле Охридского озера и Самуиловой<br> твердыни. А также мы заберемся на вершину<br> горы Татичев Камен где находится<br>  археологический памятник Кокино в длину<br> около 100 метров.               
+              button.btn-order-now
+                span.button-text-content купить тур сейчас  
+            .slide__review
+              .review__title Отзывы
+              p.review__content Я бы сказал необычное старое здание. В<br> архитектуре я не разбираюсь, но подъем в<br> гору был очень веселым так как люди<br> оказались легкими и заводными. Красота<br> природы впечатлила, особенно после<br> долгого пути в гору.
+              .review__user 
+                +img("slides", "slider-user-image3", "jpg", 38, 38, "Мужчина")
+                .user__name Михаил Кузьмин
+          .slides__slide
+            +img("slides", "slide-background-image4", "jpg", 430, 596, "Черногория", "slide-background-picture")
+            .slide__description
+              h2.slide__title Черногория
+              p.slide__desc 
+                |Черногория удивит нас самым большим в<br> Европе каньоном реки Тара, который в<br> некоторых местах высотой берегов доходит<br> до 1300 метров, а шириной не превышает<br> трех. При этом длина каньона составляет 80<br> км.                
+              button.btn-order-now
+                span.button-text-content купить тур сейчас  
+            .slide__review
+              .review__title Отзывы
+              p.review__content Неописуемой красоты каньон! Ничего<br> прекраснее в жизни не видела, разве что в<br> фильмах :) Всем советую
+              .review__user 
+                +img("slides", "slider-user-image4", "jpg", 38, 38, "Девушка")
+                .user__name Анастасия Мей
+          .slides__slide
+            +img("slides", "slide-background-image5", "jpg", 430, 596, "Хорватия", "slide-background-picture")
+            .slide__description
+              h2.slide__title Хорватия
+              p.slide__desc 
+                |В Хорватии мы посетим необычайную<br> пещеру названную Бередине. Ее подземный<br> мир увлечет вас на 80-ти метровую глубину<br> через 5 освещенных залов, украшенных<br> удивительными нерукотворными<br> скульптурами —  сталактитами и<br> сталагмитами —  формировавшимися тысячи<br> и тысячи лет.                
+              button.btn-order-now
+                span.button-text-content купить тур сейчас  
+            .slide__review
+              .review__title Отзывы
+              p.review__content Мы поехали всей семьей, я, моя жена и<br> родители. Пещера просто незабываема! А то,<br> что все это формировалось тысячелетиями,<br> мега необычно. Первоначально даже не<br> верилось, но натур ни с чем не спутать по<br> итогу :)
+              .review__user 
+                +img("slides", "slider-user-image5", "jpg", 38, 38, "Мужчина")
+                .user__name Владимир Мулицин

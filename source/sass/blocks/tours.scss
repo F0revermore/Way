@@ -1,0 +1,118 @@
+.tours {
+    position: relative;
+
+    .slider-tab-background{
+        position: absolute;
+        z-index: -2;
+    }
+    .container {
+        .slider-tab {
+            .slider-tab__nav {
+                display: flex;
+                gap: 99px;
+                padding-bottom: 15px;
+                margin-bottom: 80px;
+
+                .nav__item {
+                    font-size: 20px;
+
+                    color: $color-default-black-text;
+                    opacity: 30%;
+                }
+
+                .nav__item--active {
+                    color: $color-default-orange;
+                    opacity: 100%;
+                }
+            }
+
+            .slider-tab_slides {
+                .slides__slide {
+                    display: none;
+                }
+
+                .slides__slide--active {
+                    position: relative;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+
+                    .slide-background-picture {
+                        position: absolute;
+                        top: -5%;
+                        right: 20%;
+                        z-index: -1;
+                    }
+
+                    .slide__description {
+                        .slide__title {
+                            padding: 0;
+                            padding-bottom: 20px;
+                            margin: 0;
+                            margin-bottom: 30px;
+
+                            font-size: 55px;
+                            color: $color-default-black-text;
+                        }
+
+                        .slide__desc {
+                            margin: 0;
+                            margin-bottom: 50px;
+
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: $color-default-black-text;
+                            opacity: 70%;
+                        }
+
+                        .btn-order-now {
+                            display: flex;
+                            align-items: center;
+                            padding: 30px 40px;
+
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            background-color: $color-default-orange;
+                            color: $color-default-white;
+                            border: none;
+
+                            cursor: pointer;
+                        }
+                    }
+                    .slide__review{
+                        margin-top: 97px;
+                        padding: 30px;
+
+                        background-color: $color-default-white;
+
+                        .review__title{
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+
+                            font-size: 30px;
+                        }
+                        .review__content{
+                            margin-bottom: 35px;
+
+                            font-size: 14px;
+                            color: $color-default-black-text;
+                            opacity: 70%;
+                        }
+                        .review__user{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+
+                            .user__name{
+                                font-size: 16px;
+                                color: $color-default-black-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
