@@ -1,0 +1,62 @@
+mixin products()
+  section.products
+    .container
+      .products__list
+        .list__item
+          .products-wrapper
+            .item__title
+              .title  
+                .title-text Комплексный 
+                .price  $1999
+              p.desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
+            .item__list-content 
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Разработанный маршрут с<br> гидом группы 
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Перелет, трансфер и<br> проживание в отелях
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Завтраки, ужины в отелях и<br> ланчи на природе
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Экскурсии по удивительно<br> красивым местам Европы
+          .item__button 
+            button.btn-order-now
+              span.button-text-content купить тур сейчас 
+        .list__item
+          .products-wrapper
+            .item__title
+              .title  
+                .title-text Экономный 
+                .price  $1399
+              p.desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
+            .item__list-content 
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Разработанный маршрут с<br> гидом группы 
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Перелет и трансфер
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Проживание в хостелах при<br> отелях
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Только завтраки в отелях
+              .list-content__item
+                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
+                span.text Экскурсии по удивительно<br> красивым местам Европы
+          .item__button
+            button.btn-order-now
+              span.button-text-content купить тур сейчас 
+      .products__desc
+        h2.title Цены
+        p.desc
+          |Специально для Вас  мы<br> разработали 2 пакета цен с<br> разными условиями, отталкиваясь<br> от Ваших потребностей и<br> возможностей. Выберите для себя<br> лучший вариант отпуска и<br> отдохните на все 100%!
+        .contacts 
+          .contacts__title Свяжитесь с нами
+          a.contacts__phone(href="tel:+749978468446")
+            +icon("phone", 30, 30) 
+            |+7 (499) -784-684-46	

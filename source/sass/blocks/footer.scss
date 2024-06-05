@@ -1,5 +1,65 @@
 .footer {
-  padding: 40px 0;
+  .container{
+    display: flex;
 
-  background-color: $color-neon-blue;
+    .footer__wrapper{
+      display: flex;
+      flex-direction: column;
+
+      border-right: solid 2px #D7D9DF;
+
+      .footer__title{
+        margin: 0;
+        margin-bottom: 20px;
+  
+        font-size: 18px;
+      }
+
+      .footer__li-tours{
+        columns: 3;
+        column-gap: 50px;
+
+        list-style-type: none;
+        font-size: 14px;
+        color: $color-default-products;
+        opacity: 70%;
+      }
+      .footer__email{
+        display: flex;
+        gap: 15px;
+
+        font-size: 14px;
+        color: $color-default-orange;
+      }
+
+      .footer__phone{
+        display: flex;
+        align-items: flex-end;
+        gap: 11px;
+
+        font-size: 16px;
+        color: $color-default-orange;
+        text-decoration: underline;
+      }
+      .footer__desc{
+        margin: 0;
+
+        font-size: 14px;
+        color: $color-default-products;
+        opacity: 50%;
+      }
+    }
+    .footer__wrapper:last-child{
+      border: none;
+    }
+    .footer__next-tours{
+      padding-right: 39px;
+      margin-right: 90px;
+    }
+    .footer__contacts{
+      padding-right: 33px;
+      margin-right: 49px;
+    }
+    
+  }
 }

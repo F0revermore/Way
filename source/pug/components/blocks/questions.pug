@@ -1,0 +1,13 @@
+mixin questions()
+	section.questions
+		.container
+			+img("content", "questions-background-picture", "jpg", 844, 455, "Море", "questions-background-picture")
+			form.questions__form
+				.questions__form-title У Вас остались вопросы?
+				p.questions__form-decs Оставьте свой номер или e-mail и мы свяжемся с Вами
+				.questions__form-inputs 
+					input.questions__form-input.questions__form-number(type="text" placeholder="+7 Введите 10 цифр номера")
+					input.questions__form-input.questions__form-email(type="text" placeholder="E-mail")
+				.questions__btn
+					button.questions__btn-order-now
+						span.button-text-content купить тур сейчас 

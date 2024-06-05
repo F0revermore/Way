@@ -1,3 +1,33 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__next-tours.footer__wrapper
+        h3.footer__title Следующие путешествия
+        .footer__li-tours
+          li Марсель
+          li Ним
+          li Монпелье
+          li Барселона
+          li Пальма
+          li Сардиния
+          li Палермо
+          li Катания
+          li Неаполь
+          li Рим
+          li Корс
+          li Ницца
+          li Монако
+          li Динь-ле-Бен
+          li Гренобль
+      .footer__contacts.footer__wrapper
+        h3.footer__title Наши контакты
+        a.footer__email(href="puteshestviemechta@gmail.ru")
+          +icon("mail-gray", 26, 20)
+          |puteshestviemechta@gmail.ru
+        a.footer__phone(href="tel:+749978468446")
+          +icon("phone-gray", 30, 30) 
+          |+7 (499) -784-684-46
+      .footer__coop-tours.footer__wrapper
+        h3.footer__title Корпоративные путешествия
+        p.footer__desc Также вы можете заказать индивидуальное<br> путешествие под вашу компанию.<br> Подобные туры очень сближают<br> компанию, помогают поддерживать<br> корпоративный дух, а также являются<br> оличным времяпрепровождением
+
