@@ -15,10 +15,11 @@ mixin header(headerMods, currentUrl)
     .container
       span.header__logo
         +img("svg", "logo", "svg", 57, 22, "Логотип", "logo")
-      nav.main-nav
-        each link in headerLinks
-          a.main-nav__link(href=link.href)= link.text
-      a.header__phone(href="tel:+749978468446")
-        +icon("phone", 30, 30) 
-        |+7 (499) -784-684-46
+      .header__wrapper
+        nav.main-nav
+          each link in headerLinks
+            a.main-nav__link(href=link.href)= link.text
+        a.header__phone(href="tel:+749978468446")
+          +icon("phone", 30, 30) 
+          |+7 (499) -784-684-46
           

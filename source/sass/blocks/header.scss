@@ -6,27 +6,37 @@
   .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    .main-nav{
-      padding-left: 622px;
-
-      .main-nav__link:last-child{
-        padding-left: 40px;
-      }
-
-      .main-nav__link:hover{
-        color: $color-default-orange;
-      }
-
-    }
-    .header__phone{
+    .header__wrapper {
       display: flex;
       align-items: center;
+      gap: 53px;
 
-      padding-left: 53px;
+      .main-nav {
+        display: flex;
+        gap: 40px;   
+        
+        font-family: $ff-montserrat;
+        font-weight: 500;
 
-      color: $color-default-orange;
-      text-decoration: underline;
+        .main-nav__link:hover {
+          color: $color-default-orange;
+        }
+
+      }
+
+      .header__phone {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        font-family: $ff-montserrat;
+        font-weight: normal;
+
+        color: $color-default-orange;
+        text-decoration: underline;
+      }
     }
   }
 }

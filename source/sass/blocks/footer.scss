@@ -1,6 +1,11 @@
 .footer {
+  margin-bottom: 81px;
+  
+  font-family: $ff-montserrat;
+  
   .container{
     display: flex;
+    justify-content: space-between;
 
     .footer__wrapper{
       display: flex;
@@ -11,7 +16,8 @@
       .footer__title{
         margin: 0;
         margin-bottom: 20px;
-  
+        
+        font-weight: 600;
         font-size: 18px;
       }
 
@@ -19,6 +25,7 @@
         columns: 3;
         column-gap: 50px;
 
+        
         list-style-type: none;
         font-size: 14px;
         color: $color-default-products;
@@ -54,11 +61,9 @@
     }
     .footer__next-tours{
       padding-right: 39px;
-      margin-right: 90px;
     }
     .footer__contacts{
       padding-right: 33px;
-      margin-right: 49px;
     }
     
   }

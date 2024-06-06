@@ -1,13 +1,15 @@
 .questions {
   margin-bottom: 240px;
 
+  font-family: $ff-montserrat;
+
   .container {
     position: relative;
 
     display: flex;
     justify-content: flex-end;
 
-    .questions__background-picture {
+    .questions-background-picture {
       position: absolute;
       top: 0;
       left: 40px;
@@ -29,6 +31,7 @@
       .questions__form-title {
         margin-bottom: 11px;
 
+        font-weight: 600;
         font-size: 25px;
       }
 
@@ -51,15 +54,21 @@
           font-size: 14px;
           border: 1px solid rgba($color: $color-default-black-text, $alpha: 0.3);
         }
+        .questions__form-input::placeholder{
+          font-size: 14px;
+          color: $color-default-products;
+        }
       }
 
       .questions__btn {
         .questions__btn-order-now {
           display: flex;
           align-items: center;
-          padding: 30px 70px;
+          padding: 18px 40px;
 
+          font-weight: bold;
           text-transform: uppercase;
+          letter-spacing: 2px;
           font-size: 12px;
           background-color: $color-default-orange;
           color: $color-default-white;
