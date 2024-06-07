@@ -8,19 +8,15 @@ mixin products()
               .title  
                 .title-text Комплексный 
                 .price  $1999
-              p.desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
+              .desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
             .products-list-content
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Разработанный маршрут с гидом<br> группы 
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Перелет, трансфер и<br> проживание в отелях
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Завтраки, ужины в отелях и<br> ланчи на природе
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Экскурсии по удивительно<br> красивым местам Европы
           .products__button  
             button.btn-order-now
@@ -31,29 +27,24 @@ mixin products()
               .title  
                 .title-text Экономный 
                 .price  $1399
-              p.desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
+              .desc Ознакомьтесь с перечнем того,<br> что входит в данный пакет  
             .products-list-content
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Разработанный маршрут с гидом<br> группы 
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Перелет и трансфер
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Проживание в хостелах при<br> отелях
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Только завтраки в отелях
               .products__list-content-item
-                +img("sprite", "icon-check-mark", "svg", 22, 22, "Галочка")
                 span.text Экскурсии по удивительно<br> красивым местам Европы
           .products__button 
             button.btn-order-now
               span.button-text-content купить тур сейчас 
       .products__desc
         h2.title Цены
-        p.desc
+        .desc
           |Специально для Вас  мы<br> разработали 2 пакета цен с<br> разными условиями, отталкиваясь<br> от Ваших потребностей и<br> возможностей. Выберите для себя<br> лучший вариант отпуска и<br> отдохните на все 100%!
         .products__contacts 
           .products__contacts-title Свяжитесь с нами

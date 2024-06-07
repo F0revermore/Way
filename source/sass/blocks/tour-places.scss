@@ -27,7 +27,7 @@
 
       border-style: solid;
       border-color: $color-default-orange;
-      border-width: 4px;
+      border-width: 2px;
 
       content: "";
     }
@@ -48,12 +48,14 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      column-gap: 60px;
-      row-gap: 100px;
+      row-gap: 40px;
+      @include flex-grid-container(60px);
+
 
       .tour-places__places-list-content {
         position: relative;
-
+        @include flex-grid-item(60px, 3);
+        
         .tour-places__places-list-text-content {
           position: absolute;
           bottom: 0;
@@ -71,6 +73,12 @@
           font-weight: 500;
 
           background-color: $color-default-white;
+        }
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 350 / 430;
         }
       }
     }

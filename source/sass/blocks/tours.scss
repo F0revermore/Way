@@ -11,38 +11,56 @@
   }
 
   .container {
-    .slider-tab {
-      .slider-tab__nav {
+    .tabs {
+      .tabs__nav {
+        position: relative;
+
         display: flex;
+        width: fit-content;
         gap: 99px;
         padding-bottom: 15px;
         margin-bottom: 80px;
 
-        .slider-tab__nav-item {
+        .tabs__nav-item {
           font-size: 20px;
           font-weight: 500;
+          letter-spacing: -0.41px;
 
           color: $color-default-black-text;
           opacity: 30%;
         }
 
-        .slider-tab__nav-item--active {
+        .tabs__nav-item--active {
           color: $color-default-orange;
           opacity: 100%;
         }
       }
 
-      .slider-tab__slides {
-        .slider-tab__slide {
+      .tabs__nav::after {
+        position: absolute;
+        bottom: 0;
+
+        display: block;
+        min-width: 100%;
+
+        border-bottom: 1px solid $color-default-black-text;
+
+        opacity: 30%;
+
+        content: "";
+      }
+
+      .tabs__slides {
+        .tabs__slide {
           display: none;
         }
 
-        .slider-tab__slide--active {
+        .tabs__slide--active {
           position: relative;
 
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
+          align-items: center;
 
 
           .slide-background-picture {
@@ -52,8 +70,10 @@
             z-index: -1;
           }
 
-          .slider-tab__slide-description {
-            .slider-tab__description-title {
+          .tabs__tab-description {
+            .tabs__description-title {
+              position: relative;
+
               padding: 0;
               padding-bottom: 20px;
               margin: 0;
@@ -65,8 +85,21 @@
               font-size: 55px;
               color: $color-default-black-text;
             }
+            .tabs__description-title::after {
+              position: absolute;
+              bottom: 0;
+      
+              display: block;
+              min-width: 175px;
+      
+              border-style: solid;
+              border-color: $color-default-orange;
+              border-width: 2px;
+      
+              content: "";
+            }
 
-            .slider-tab__slide-desc {
+            .tabs__tab-desc{
               margin: 0;
               margin-bottom: 50px;
 
@@ -78,7 +111,7 @@
               opacity: 70%;
             }
 
-            .slider-tab__btn-order-now {
+            .tabs__btn-order-now {
               display: flex;
               align-items: center;
               padding: 30px 40px;
@@ -95,13 +128,13 @@
             }
           }
 
-          .slider-tab__slide__review {
-            margin-top: 97px;
+          .tabs__slide-review {
             padding: 30px;
 
             background-color: $color-default-white;
 
-            .slider-tab__review__title {
+            .tabs__review-title {
+              position: relative;
               padding-bottom: 10px;
               margin-bottom: 20px;
 
@@ -109,11 +142,25 @@
               letter-spacing: -0.69px;
               font-size: 30px;
             }
+            .tabs__review-title::after{
+              position: absolute;
+              bottom: 0;
+      
+              display: block;
+              min-width: 68px;
+      
+              border-style: solid;
+              border-color: $color-default-orange;
+              border-width: 1px;
+              opacity: 30%;
+      
+              content: "";
+            }
 
-            .slider-tab__review-content {
+            .tabs__review-content {
               margin: 0;
               margin-bottom: 35px;
-              
+
               line-height: 28px;
               letter-spacing: -0.41px;
               font-size: 14px;
@@ -121,12 +168,12 @@
               opacity: 70%;
             }
 
-            .slider-tab__review-user {
+            .tabs__review-user {
               display: flex;
               align-items: center;
               gap: 16px;
 
-              .slider-tab__username {
+              .tabs__username {
                 font-weight: 500;
                 letter-spacing: -0.47px;
                 font-size: 16px;

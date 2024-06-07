@@ -1,82 +1,82 @@
 mixin tours()
-  section.tours
+  section.tours#tours
     +img("content", "slider-tab-background", "png", 1444, 1095, "Европа", "slider-tab-background")
     .container
-      .slider-tab 
-        .slider-tab__nav 
-          span.slider-tab__nav-item.slider-tab__nav-item--active  Греция
-          span.slider-tab__nav-item  Албания
-          span.slider-tab__nav-item  Македония
-          span.slider-tab__nav-item  Черногория
-          span.slider-tab__nav-item  Хорватия
-        .slider-tab__slides 
-          .slider-tab__slide.slider-tab__slide--active 
+      .tabs 
+        .tabs__nav 
+          span.tabs__nav-item.tabs__nav-item--active  Греция
+          span.tabs__nav-item  Албания
+          span.tabs__nav-item  Македония
+          span.tabs__nav-item  Черногория
+          span.tabs__nav-item  Хорватия
+        .tabs__slides 
+          .tabs__slide.tabs__slide--active 
             +img("slides", "slide-background-image1", "jpg", 430, 596, "Греция", "slide-background-picture")
-            .slider-tab__slide-description
-              h2.slider-tab__description-title Греция
-              p.slider-tab__slide-desc 
+            .tabs__tab-description
+              h2.tabs__description-title Греция
+              p.tabs__tab-desc
                 |На севере Греции находится один из<br> крупнейших комплексов монастырей,<br> расположенных на вершинах скал. Название<br> его «Метеора» буквально переводится <br>как «висящие в воздухе». Этот монастырь<br> основная цель нашего путешествия в Греции.<br> После покарения скал из песчанника и<br> обломочной горной породы, достигающих в<br> высоту 600 метров, наградой будет <br>неописуемая красота природы и атмосфера,<br> царящая в монастырях Метеоры. 
-              button.slider-tab__btn-order-now
-                span.slider-tab__button-text-content купить тур сейчас  
-            .slider-tab__slide__review
-              .slider-tab__review__title Отзывы
-              p.slider-tab__review-content Метеоры в Греции можно сравнить разве<br> что с Монсерратт в Испании. Такие же<br> высоченные скалы. Но здесь потрясает<br> масштаб. Огромная территория, высоко в<br> горах. Ощущение такое, как будто стоишь на<br> краю света! 
-              .slider-tab__review-user 
+              button.tabs__btn-order-now
+                span.tabs__button-text-content купить тур сейчас  
+            .tabs__slide-review
+              .tabs__review-title Отзывы
+              p.tabs__review-content Метеоры в Греции можно сравнить разве<br> что с Монсерратт в Испании. Такие же<br> высоченные скалы. Но здесь потрясает<br> масштаб. Огромная территория, высоко в<br> горах. Ощущение такое, как будто стоишь на<br> краю света! 
+              .tabs__review-user 
                 +img("slides", "slider-user-image1", "jpg", 38, 38, "Девушка")
-                .slider-tab__username Влада Голицина
-          .slider-tab__slide
+                .tabs__username Влада Голицина
+          .tabs__slide
             +img("slides", "slide-background-image2", "jpg", 430, 596, "Албания", "slide-background-picture")
-            .slider-tab__slide-description
-              h2.slider-tab__description-title Албания
-              p.slider-tab__slide-desc 
+            .tabs__tab-description
+              h2.tabs__description-title Албания
+              p.tabs__tab-desc
                 |В Албании мы посетим Курорт Ксамиль. Этот<br> курорт поразит вас чистейшей водой и<br> удивительным пляжем. Вначале кажется, что<br> на пляже вас встречает обычный, правда<br> невероятно белоснежный и слишком<br> крупный песок. Однако, присмотревшись,<br> можно понять, что это не песок, а камни,<br> перетёртые до такого мелкого состояния.               
-              button.slider-tab__btn-order-now
-                span.slider-tab__button-text-content купить тур сейчас  
-            .slider-tab__slide__review
-              .slider-tab__review__title Отзывы
-              p.slider-tab__review-content Замечательный курорт, обязательно стоит<br> посетить. В следующий раз возьму с собой<br> сестру, чтобы тоже смогла вкусить все красоты<br> природы :)
-              .slider-tab__review-user 
+              button.tabs__btn-order-now
+                span.tabs__button-text-content купить тур сейчас  
+            .tabs__slide-review
+              .tabs__review-title Отзывы
+              p.tabs__review-content Замечательный курорт, обязательно стоит<br> посетить. В следующий раз возьму с собой<br> сестру, чтобы тоже смогла вкусить все красоты<br> природы :)
+              .tabs__review-user 
                 +img("slides", "slider-user-image2", "jpg", 38, 38, "Девушка")
-                .slider-tab__username Маришка
-          .slider-tab__slide
+                .tabs__username Маришка
+          .tabs__slide
             +img("slides", "slide-background-image3", "jpg", 430, 596, "Македония", "slide-background-picture")
-            .slider-tab__slide-description
-              h2.slider-tab__description-title Македония
-              p.slider-tab__slide-desc 
+            .tabs__tab-description
+              h2.tabs__description-title Македония
+              p.tabs__tab-desc
                 |В Македонии нашей целью будет посетить<br> Палаошник, который расположился в<br> удивительно красивой лесистой местности<br> возле Охридского озера и Самуиловой<br> твердыни. А также мы заберемся на вершину<br> горы Татичев Камен где находится<br>  археологический памятник Кокино в длину<br> около 100 метров.               
-              button.slider-tab__btn-order-now
-                span.slider-tab__button-text-content купить тур сейчас  
-            .slider-tab__slide__review
-              .slider-tab__review__title Отзывы
-              p.slider-tab__review-content Я бы сказал необычное старое здание. В<br> архитектуре я не разбираюсь, но подъем в<br> гору был очень веселым так как люди<br> оказались легкими и заводными. Красота<br> природы впечатлила, особенно после<br> долгого пути в гору.
-              .slider-tab__review-user 
+              button.tabs__btn-order-now
+                span.tabs__button-text-content купить тур сейчас  
+            .tabs__slide-review
+              .tabs__review-title Отзывы
+              p.tabs__review-content Я бы сказал необычное старое здание. В<br> архитектуре я не разбираюсь, но подъем в<br> гору был очень веселым так как люди<br> оказались легкими и заводными. Красота<br> природы впечатлила, особенно после<br> долгого пути в гору.
+              .tabs__review-user 
                 +img("slides", "slider-user-image3", "jpg", 38, 38, "Мужчина")
-                .slider-tab__username Михаил Кузьмин
-          .slider-tab__slide
+                .tabs__username Михаил Кузьмин
+          .tabs__slide
             +img("slides", "slide-background-image4", "jpg", 430, 596, "Черногория", "slide-background-picture")
-            .slider-tab__slide-description
-              h2.slider-tab__description-title Черногория
-              p.slider-tab__slide-desc 
+            .tabs__tab-description
+              h2.tabs__description-title Черногория
+              p.tabs__tab-desc
                 |Черногория удивит нас самым большим в<br> Европе каньоном реки Тара, который в<br> некоторых местах высотой берегов доходит<br> до 1300 метров, а шириной не превышает<br> трех. При этом длина каньона составляет 80<br> км.                
-              button.slider-tab__btn-order-now
-                span.slider-tab__button-text-content купить тур сейчас  
-            .slider-tab__slide__review
-              .slider-tab__review__title Отзывы
-              p.slider-tab__review-content Неописуемой красоты каньон! Ничего<br> прекраснее в жизни не видела, разве что в<br> фильмах :) Всем советую
-              .slider-tab__review-user 
+              button.tabs__btn-order-now
+                span.tabs__button-text-content купить тур сейчас  
+            .tabs__slide-review
+              .tabs__review-title Отзывы
+              p.tabs__review-content Неописуемой красоты каньон! Ничего<br> прекраснее в жизни не видела, разве что в<br> фильмах :) Всем советую
+              .tabs__review-user 
                 +img("slides", "slider-user-image4", "jpg", 38, 38, "Девушка")
-                .slider-tab__username Анастасия Мей
-          .slider-tab__slide
+                .tabs__username Анастасия Мей
+          .tabs__slide
             +img("slides", "slide-background-image5", "jpg", 430, 596, "Хорватия", "slide-background-picture")
-            .slider-tab__slide-description
-              h2.slider-tab__description-title Хорватия
-              p.slider-tab__slide-desc 
+            .tabs__tab-description
+              h2.tabs__description-title Хорватия
+              p.tabs__tab-desc
                 |В Хорватии мы посетим необычайную<br> пещеру названную Бередине. Ее подземный<br> мир увлечет вас на 80-ти метровую глубину<br> через 5 освещенных залов, украшенных<br> удивительными нерукотворными<br> скульптурами —  сталактитами и<br> сталагмитами —  формировавшимися тысячи<br> и тысячи лет.                
-              button.slider-tab__btn-order-now
-                span.slider-tab__button-text-content купить тур сейчас  
-            .slider-tab__slide__review
-              .slider-tab__review__title Отзывы
-              p.slider-tab__review-content Мы поехали всей семьей, я, моя жена и<br> родители. Пещера просто незабываема! А то,<br> что все это формировалось тысячелетиями,<br> мега необычно. Первоначально даже не<br> верилось, но натур ни с чем не спутать по<br> итогу :)
-              .slider-tab__review-user 
+              button.tabs__btn-order-now
+                span.tabs__button-text-content купить тур сейчас  
+            .tabs__slide-review
+              .tabs__review-title Отзывы
+              p.tabs__review-content Мы поехали всей семьей, я, моя жена и<br> родители. Пещера просто незабываема! А то,<br> что все это формировалось тысячелетиями,<br> мега необычно. Первоначально даже не<br> верилось, но натур ни с чем не спутать по<br> итогу :)
+              .tabs__review-user 
                 +img("slides", "slider-user-image5", "jpg", 38, 38, "Мужчина")
-                .slider-tab__username Владимир Мулицин
+                .tabs__username Владимир Мулицин

@@ -43,9 +43,19 @@
       }
 
       .questions__form-inputs {
+        position: relative;
+
         display: flex;
         gap: 19px;
         margin-bottom: 25px;
+
+        .questions-wraper{
+          position: absolute;
+          left: 15px;
+          top: 6px;
+
+          color: $color-default-orange;
+        }
 
         .questions__form-input {
           min-width: 269px;
@@ -57,6 +67,10 @@
         .questions__form-input::placeholder{
           font-size: 14px;
           color: $color-default-products;
+        }
+        .questions__form-number::placeholder::before{
+          content: "*123123131";
+          color: $color-default-orange;
         }
       }
 

@@ -116,3 +116,20 @@
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
+
+// flex сетка родителя для разного количества колонок
+@mixin flex-grid-container($margin) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$margin;
+  margin-top: -$margin;
+  width: calc(100% + $margin);
+}
+
+// Количетво колонок и отступы
+@mixin flex-grid-item($margin, $cols) {
+  margin-left: $margin;
+  margin-top: $margin;
+
+  width: calc((100% / $cols) - $margin);
+}

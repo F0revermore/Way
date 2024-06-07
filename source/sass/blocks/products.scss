@@ -29,6 +29,7 @@
               display: flex;
               justify-content: space-between;
 
+              position: relative;
               margin-bottom: 40px;
 
               .title-text {
@@ -47,19 +48,39 @@
             }
 
             .desc {
+              position: relative;
               padding-bottom: 28px;
               margin-bottom: 30px;
 
               font-size: 16px;
             }
+
+            .desc::after {
+              position: absolute;
+              bottom: 0;
+
+              display: block;
+              min-width: 310px;
+
+              border-style: solid;
+              border-color: $color-default-black-text;
+              border-width: 1px;
+              opacity: 30%;
+
+              content: "";
+
+            }
           }
 
-          .products-list-content{
+          .products-list-content {
             .products__list-content-item {
+              position: relative;
+
               display: flex;
               align-items: flex-start;
               gap: 8px;
 
+              padding-left: 30px;
               margin-bottom: 15px;
 
               .text {
@@ -70,13 +91,28 @@
               }
             }
 
+            .products__list-content-item::before {
+              position: absolute;
+              top: 9px;
+              left: 0;
+
+              width: 14px;
+              height: 12px;
+
+              background-size: contain;
+              background-repeat: no-repeat;
+              color: $color-default-black-text;
+              background-image: url("../../img/svg/check-mark-black.svg");
+              content: "";
+            }
+
             .products__list-content-item:last-child {
               margin-bottom: 30px;
             }
           }
         }
 
-        .products__button  {
+        .products__button {
           bottom: 0;
 
           .btn-order-now {
@@ -104,11 +140,22 @@
         .products-wrapper {
           .products__item-title {
             .title {
+
               .title-text,
               .price {
                 color: $color-default-orange;
                 letter-spacing: 0;
               }
+            }
+
+            .desc::after {
+              border-color: $color-default-orange;
+            }
+          }
+
+          .products-list-content {
+            .products__list-content-item::before {
+              background-image: url("../../img/svg/check-mark-orange.svg");
             }
           }
         }
@@ -117,11 +164,29 @@
 
     .products__desc {
       .title {
+        position: relative;
         padding-bottom: 20px;
         margin-bottom: 30px;
 
+        line-height: 90px;
         font-weight: 600;
         font-size: 55px;
+      }
+
+      .title::after {
+
+        position: absolute;
+        bottom: 0;
+
+        display: block;
+        min-width: 175px;
+
+        border-style: solid;
+        border-color: $color-default-orange;
+        border-width: 1px;
+
+        content: "";
+
       }
 
       .desc {
