@@ -9,13 +9,14 @@
       margin: 0;
       margin-bottom: 30px;
       padding-bottom: 30px;
+      max-width: 358px;
 
       letter-spacing: -1.25px;
       font-weight: 600;
       font-size: 55px;
       line-height: 80px;
 
-      color: $color-default-black-text;
+      color: $color-default-black-second;
     }
 
     .tour-places__title::after {
@@ -35,12 +36,13 @@
     .tour-places__subtitle-text {
       margin: 0;
       margin-bottom: 56px;
+      max-width: 358px;
 
       letter-spacing: -0.47px;
       font-size: 16px;
       line-height: 28px;
 
-      color: $color-default-black-text;
+      color: $color-default-black-second;
       opacity: 70%;
     }
 
@@ -55,7 +57,7 @@
       .tour-places__places-list-content {
         position: relative;
         @include flex-grid-item(60px, 3);
-        
+
         .tour-places__places-list-text-content {
           position: absolute;
           bottom: 0;
@@ -74,11 +76,80 @@
 
           background-color: $color-default-white;
         }
-        img{
+
+        img {
           object-fit: cover;
           width: 100%;
           height: 100%;
           aspect-ratio: 350 / 430;
+        }
+
+        .tour-places__btn {
+          position: absolute;
+          min-width: 266px;
+          top: 152px;
+          left: 42px;
+          // transform: translate(-50%, -50%);
+
+          padding: 30px 25px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 500;
+          color: $color-default-white;
+          border: 1px solid rgba($color-default-white, $alpha: 0.7);
+          opacity: 0;
+
+        }
+      }
+
+      .tour-places__places-list-content:hover {
+        img {
+          filter: brightness(60%);
+        }
+
+        .tour-places__btn {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .tour-places {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .tour-places__title {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+
+        font-size: 30px;
+        line-height: 150%;
+        letter-spacing: 0;
+
+      }
+
+      .tour-places__title::after {
+        display: none;
+      }
+
+      .tour-places__subtitle-text {
+        max-width: 343px;
+        margin-bottom: 40px;
+
+        text-align: center;
+      }
+
+      .tour-places__places-list {
+        row-gap: 19px;
+
+        .tour-places__places-list-content {
+          position: relative;
         }
       }
     }

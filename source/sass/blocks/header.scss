@@ -4,10 +4,19 @@
   background-color: $color-default-white;
 
   .container {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    .header__burger-menu {
+      display: none;
+
+      padding: 10px 21px;
+      background-color: $color-default-orange;
+    }
+    
     .header__wrapper {
       display: flex;
       align-items: center;
@@ -25,7 +34,7 @@
         }
 
       }
-
+      
       .header__phone {
         display: flex;
         align-items: center;
@@ -36,6 +45,21 @@
 
         color: $color-default-orange;
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  .header{
+    .container{
+      .header__burger-menu{
+        display: block;
+      }
+      .header__wrapper{
+        position: absolute;
+        visibility: hidden;
       }
     }
   }

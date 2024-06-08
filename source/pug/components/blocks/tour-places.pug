@@ -1,21 +1,31 @@
 mixin tour-places()
-	section.tour-places
-		.container
-			h2.tour-places__title Места<br>посещения
-			p.tour-places__subtitle-text Вы можете выбрать полный тур или <br>частичный, с посещением первых 3 мест
-			.tour-places__places-list
-				.tour-places__places-list-content
-					+img("content", "places-case-content1", "jpg", 350, 430, "Греция")
-					span.tour-places__places-list-text-content Греция
-				.tour-places__places-list-content
-					+img("content", "places-case-content2", "jpg", 350, 430, "Албания")
-					span.tour-places__places-list-text-content Албания
-				.tour-places__places-list-content
-					+img("content", "places-case-content3", "jpg", 350, 430, "Македония")
-					span.tour-places__places-list-text-content Македония
-				.tour-places__places-list-content
-					+img("content", "places-case-content4", "jpg", 350, 430, "Черногория")
-					span.tour-places__places-list-text-content Черногория
-				.tour-places__places-list-content
-					+img("content", "places-case-content5", "jpg", 350, 430, "Хорватия")
-					span.tour-places__places-list-text-content Хорватия
+  section.tour-places
+    .container
+      h2.tour-places__title Места посещения
+      p.tour-places__subtitle-text Вы можете выбрать полный тур или  частичный, с посещением первых 3 мест
+      .tour-places__places-list
+        .tour-places__places-list-content
+          +img("content", "places-case-content1", "jpg", 350, 430, "Греция")
+          span.tour-places__places-list-text-content Греция
+          a.tour-places__btn(href="#tours")
+            span смотреть подробнее
+        .tour-places__places-list-content
+          +img("content", "places-case-content2", "jpg", 350, 430, "Албания")
+          span.tour-places__places-list-text-content Албания
+          a.tour-places__btn(href="#tours")
+            span смотреть подробнее
+        .tour-places__places-list-content
+          +img("content", "places-case-content3", "jpg", 350, 430, "Македония")
+          span.tour-places__places-list-text-content Македония
+          a.tour-places__btn(href="#tours")
+            span смотреть подробнее
+        .tour-places__places-list-content
+          +img("content", "places-case-content4", "jpg", 350, 430, "Черногория")
+          span.tour-places__places-list-text-content Черногория
+          a.tour-places__btn(href="#tours")
+            span смотреть подробнее
+        .tour-places__places-list-content
+          +img("content", "places-case-content5", "jpg", 350, 430, "Хорватия")
+          span.tour-places__places-list-text-content Хорватия
+          a.tour-places__btn(href="#tours")
+            span смотреть подробнее

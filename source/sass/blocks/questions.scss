@@ -62,7 +62,7 @@
           padding: 15px;
 
           font-size: 14px;
-          border: 1px solid rgba($color: $color-default-black-text, $alpha: 0.3);
+          border: 1px solid rgba($color: $color-default-black-second, $alpha: 0.3);
         }
         .questions__form-input::placeholder{
           font-size: 14px;
@@ -89,6 +89,9 @@
           border: none;
 
           cursor: pointer;
+        }
+        .questions__btn-order-now:hover{
+          background-color: $color-hover-button;
         }
       }
     }
