@@ -5,7 +5,7 @@
 
   font-family: $ff-montserrat;
 
-  .tabs-background  {
+  .tabs-background {
     position: absolute;
     width: 100%;
     z-index: -2;
@@ -86,21 +86,23 @@
               font-size: 55px;
               color: $color-default-black-second;
             }
+
             .tabs__description-title::after {
               position: absolute;
               bottom: 0;
-      
+
               display: block;
               min-width: 175px;
-      
+
               border-style: solid;
               border-color: $color-default-orange;
               border-width: 2px;
-      
+
               content: "";
             }
 
-            .tabs__tab-desc{
+            .tabs__tab-desc {
+              max-width: 370px;
               margin: 0;
               margin-bottom: 50px;
 
@@ -127,7 +129,8 @@
 
               cursor: pointer;
             }
-            .tabs__btn-order-now:hover{
+
+            .tabs__btn-order-now:hover {
               background-color: $color-hover-button;
             }
           }
@@ -146,22 +149,24 @@
               letter-spacing: -0.69px;
               font-size: 30px;
             }
-            .tabs__review-title::after{
+
+            .tabs__review-title::after {
               position: absolute;
               bottom: 0;
-      
+
               display: block;
               min-width: 68px;
-      
+
               border-style: solid;
               border-color: $color-default-orange;
               border-width: 1px;
               opacity: 30%;
-      
+
               content: "";
             }
 
             .tabs__review-content {
+              max-width: 322px;
               margin: 0;
               margin-bottom: 35px;
 
@@ -183,6 +188,77 @@
                 font-size: 16px;
                 color: $color-default-black-second;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .tours {
+    margin-bottom: 112px;
+
+    .tabs-background {
+      display: none;
+    }
+
+    .container {
+      .tabs {
+        .tabs__nav {}
+
+        .tabs__slides {
+          .tabs__slide {
+            flex-direction: column;
+
+            .slide-background-picture {
+              left: 0;
+              top: unset;
+              bottom: 0;
+
+              width: calc(100% + 48px);
+              max-width: unset;
+              height: 415px;
+              margin: 0 -24px;
+
+              object-fit: cover;
+            }
+
+            .tabs__tab-description {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 110px;
+
+              .tabs__description-title {
+                padding-bottom: 0;
+                margin-bottom: 20px;
+
+                font-size: 30px;
+                letter-spacing: 0;
+                line-height: 150%;
+              }
+
+              .tabs__description-title::after {
+                display: none;
+              }
+
+              .tabs__tab-desc {
+                min-width: 726px;
+                text-align: center;
+              }
+
+              .tabs__btn-order-now {
+                font-size: 10px;
+                padding: 19px 52px;
+              }
+            }
+
+            .tabs__slide-review {
+              max-width: 382px;
+
+              padding: 30px 30px 0 30px ;
             }
           }
         }
