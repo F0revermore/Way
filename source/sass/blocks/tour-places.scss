@@ -146,10 +146,13 @@
       }
 
       .tour-places__places-list {
-        row-gap: 19px;
+        padding: 0 74px;
+        row-gap: 0;
 
+        @include flex-grid-container(29px);
         .tour-places__places-list-content {
           position: relative;
+          @include flex-grid-item(20px, 2)
         }
       }
     }

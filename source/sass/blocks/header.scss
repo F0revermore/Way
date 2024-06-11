@@ -16,7 +16,7 @@
       padding: 10px 21px;
       background-color: $color-default-orange;
     }
-    
+
     .header__wrapper {
       display: flex;
       align-items: center;
@@ -24,8 +24,8 @@
 
       .main-nav {
         display: flex;
-        gap: 40px;   
-        
+        gap: 40px;
+
         font-family: $ff-montserrat;
         font-weight: 500;
 
@@ -34,7 +34,7 @@
         }
 
       }
-      
+
       .header__phone {
         display: flex;
         align-items: center;
@@ -51,15 +51,33 @@
 }
 
 @media (max-width: 1200px) {
-  
-  .header{
-    .container{
-      .header__burger-menu{
+
+  .header {
+    padding: 0;
+
+    .container {
+      padding: 0;
+      padding-left: 21px;
+
+      .header__burger-menu {
         display: block;
       }
-      .header__wrapper{
+
+      .header__wrapper {
         position: absolute;
         visibility: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      padding-left: 16px;
+
+      .header__burger-menu {
+        padding: 10px;
       }
     }
   }

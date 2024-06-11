@@ -1,45 +1,49 @@
 .footer {
   margin-bottom: 81px;
-  
+
   font-family: $ff-montserrat;
-  
-  .container{
+
+  .container {
     display: flex;
     justify-content: space-between;
 
-    .footer__wrapper{
+    .footer__wrapper {
       display: flex;
       flex-direction: column;
 
       border-right: solid 2px #D7D9DF;
 
-      .footer__title{
+      .footer__title {
         margin: 0;
         margin-bottom: 20px;
-        
+
         font-weight: 600;
         font-size: 18px;
       }
 
-      .footer__li-tours{
+      .footer__li-tours {
         columns: 3;
         column-gap: 50px;
 
-        
+
         list-style-type: none;
         font-size: 14px;
         color: $color-default-products;
         opacity: 70%;
       }
-      .footer__email{
+
+      .footer__email {
         display: flex;
         gap: 15px;
 
         font-size: 14px;
         color: $color-default-orange;
+        .text-tablet{
+          display: none;
+        }
       }
 
-      .footer__phone{
+      .footer__phone {
         display: flex;
         align-items: flex-end;
         gap: 11px;
@@ -48,23 +52,75 @@
         color: $color-default-orange;
         text-decoration: underline;
       }
-      .footer__desc{
+
+      .footer__desc {
         margin: 0;
+        max-width: 320px;
 
         font-size: 14px;
         color: $color-default-products;
         opacity: 50%;
       }
     }
-    .footer__wrapper:last-child{
+
+    .footer__wrapper:last-child {
       border: none;
     }
-    .footer__next-tours{
+
+    .footer__next-tours {
       padding-right: 39px;
     }
-    .footer__contacts{
+
+    .footer__contacts {
       padding-right: 33px;
     }
-    
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    margin-bottom: 50px;
+
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 50px;
+
+      .footer__wrapper {
+        margin-bottom: 30px;
+
+        
+
+        .footer__li-tours {
+          column-gap: 30px;
+        }
+        .footer__email{
+          .text{
+            display: none;
+          }
+          .text-tablet{
+            display: block;
+          }
+        }
+      }
+      .footer__wrapper:last-child{
+        min-width: 726px;
+
+        align-items: center;
+        margin-bottom: 0px;
+        padding-top: 30px;
+
+        border-top: solid 2px #D7D9DF;
+        text-align: center;
+      
+      }
+      .footer__contacts{
+        padding-right: 0;
+
+        border: none;
+      }
+
+    }
   }
 }

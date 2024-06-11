@@ -136,6 +136,7 @@
           }
 
           .tabs__slide-review {
+            margin-left: auto;
             padding: 30px;
 
             background-color: $color-default-white;
@@ -206,8 +207,6 @@
 
     .container {
       .tabs {
-        .tabs__nav {}
-
         .tabs__slides {
           .tabs__slide {
             flex-direction: column;
@@ -257,7 +256,8 @@
 
             .tabs__slide-review {
               max-width: 382px;
-
+              
+              margin-left: 0;
               padding: 30px 30px 0 30px ;
             }
           }
