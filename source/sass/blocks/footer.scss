@@ -124,3 +124,49 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    margin-bottom: 50px;
+
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 50px;
+
+      .footer__wrapper {
+        margin-bottom: 30px;
+
+        
+
+        .footer__li-tours {
+          column-gap: 30px;
+        }
+        .footer__email{
+          .text{
+            display: none;
+          }
+          .text-tablet{
+            display: block;
+          }
+        }
+      }
+      .footer__wrapper:last-child{
+        min-width: 726px;
+
+        align-items: center;
+        margin-bottom: 0px;
+        padding-top: 30px;
+
+        border-top: solid 2px #D7D9DF;
+        text-align: center;
+      
+      }
+      .footer__contacts{
+        padding-right: 0;
+
+        border: none;
+      }
+
+    }
+  }
+}

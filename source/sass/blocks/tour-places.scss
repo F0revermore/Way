@@ -158,3 +158,28 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .tour-places {
+    .container {
+
+
+      .tour-places__title {
+        font-size: 24px;
+      }
+
+      .tour-places__subtitle-text {
+        max-width: 288px
+      }
+
+      .tour-places__places-list {
+
+
+        @include flex-grid-container(16px);
+        .tour-places__places-list-content {
+          position: relative;
+          @include flex-grid-item(20px, 1)
+        }
+      }
+    }
+  }
+}

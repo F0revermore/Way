@@ -136,3 +136,51 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .questions {
+    margin-bottom: 70px;
+    .container {
+      padding: 0;
+      .questions-background-picture {
+        visibility: hidden;
+      }
+
+      .questions__form { 
+        padding: 50px 16px;
+
+        background-color: $color-white-second;
+        box-shadow: none;
+        .questions__form-title{
+          max-width: 288px;
+
+          margin-bottom: 20px;
+          line-height: 32px;
+          text-align: center;
+        }
+        .questions__form-decs{
+          max-width: 288px;
+
+          text-align: center;
+        }
+        .questions__form-inputs{
+          flex-direction: column;
+          gap: 20px;
+
+          .questions__form-input{
+            min-width: 288px;
+            padding: 16px 15px 15px 15px;
+          }
+          .questions__form-number{
+            padding-left: 51px;
+          }
+        }
+        .questions__btn {
+          .questions__btn-order-now {
+            padding: 19px 103px;
+          }
+
+        }
+      }
+    }
+  }
+}
