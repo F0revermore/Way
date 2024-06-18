@@ -108,12 +108,12 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner {
     margin-bottom: 180px;
 
     .banner__background-picture{
-      min-height: 235px;
+      height: 235px;
     }
     .container {
 

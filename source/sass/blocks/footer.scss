@@ -38,7 +38,8 @@
 
         font-size: 14px;
         color: $color-default-orange;
-        .text-tablet{
+
+        .text-tablet {
           display: none;
         }
       }
@@ -90,21 +91,24 @@
       .footer__wrapper {
         margin-bottom: 30px;
 
-        
+
 
         .footer__li-tours {
           column-gap: 30px;
         }
-        .footer__email{
-          .text{
+
+        .footer__email {
+          .text {
             display: none;
           }
-          .text-tablet{
+
+          .text-tablet {
             display: block;
           }
         }
       }
-      .footer__wrapper:last-child{
+
+      .footer__wrapper:last-child {
         min-width: 726px;
 
         align-items: center;
@@ -113,9 +117,10 @@
 
         border-top: solid 2px #D7D9DF;
         text-align: center;
-      
+
       }
-      .footer__contacts{
+
+      .footer__contacts {
         padding-right: 0;
 
         border: none;
@@ -124,47 +129,56 @@
     }
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .footer {
-    margin-bottom: 50px;
-
+    margin-bottom: 25px;
     .container {
-      flex-wrap: wrap;
-      justify-content: center;
-      column-gap: 50px;
-
       .footer__wrapper {
-        margin-bottom: 30px;
+        min-width: 288px;
 
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
         
+        border: none;
+        border-bottom: 1px solid $color-white-border;
+        padding: 0;
+        padding-bottom: 20px;
+
+        .footer__title {
+          line-height: 32px;
+        }
 
         .footer__li-tours {
-          column-gap: 30px;
+          max-width: 288px;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: center;
+          text-align: center;
+          row-gap: 20px;
         }
-        .footer__email{
-          .text{
-            display: none;
-          }
-          .text-tablet{
-            display: block;
-          }
+
+        .footer__email {
+          margin-bottom: 15px;
+        }
+        .footer__desc{
+          max-width: 288px;
         }
       }
-      .footer__wrapper:last-child{
-        min-width: 726px;
 
-        align-items: center;
-        margin-bottom: 0px;
-        padding-top: 30px;
+      .footer__wrapper:last-child {
+        border-top: none;
 
-        border-top: solid 2px #D7D9DF;
-        text-align: center;
-      
+        margin-bottom: 0;
+        padding: 0;
       }
-      .footer__contacts{
-        padding-right: 0;
 
-        border: none;
+      .footer__contacts {
+
       }
 
     }

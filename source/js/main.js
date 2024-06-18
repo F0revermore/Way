@@ -1,9 +1,12 @@
-import {mobileVhFix} from './utils/mobile-vh-fix.js';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {CustomSelect} from './modules/select/custom-select';
-import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
+import { mobileVhFix } from './utils/mobile-vh-fix.js';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+import { CustomSelect } from './modules/select/custom-select';
+import { uploadFile, uploadImageDrop } from './modules/input-file/init-upload';
 import AnchorLinks from './modules/AnchorLinks.js';
+import Tabs from './modules/Tabs.js';
+import Modal from './modules/Modal.js';
+import BurgerMenu from './modules/BurgerMenu.js';
 
 // ---------------------------------
 
@@ -29,6 +32,9 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     new AnchorLinks();
+    new Tabs();
+    new Modal();
+    new BurgerMenu();
   });
 });
 

@@ -15,12 +15,15 @@ mixin header(headerMods, currentUrl)
     .container
       span.header__logo
         +img("svg", "logo", "svg", 57, 22, "Логотип", "logo")
-      .header__burger-menu
+      button.header__burger-menu
         +img("svg", "burger-menu", "svg", 30, 30, "Меню")
       .header__wrapper
+        button.header__wrapper-btn-close.js-button-close
+          +icon("close-modal", 22, 22)
         nav.main-nav
           each link in headerLinks
             a.main-nav__link(href=link.href)= link.text
+              +icon("icon-arrow-right", 25, 25)
         a.header__phone(href="tel:+749978468446")
           +icon("phone", 30, 30) 
           |+7 (499) -784-684-46

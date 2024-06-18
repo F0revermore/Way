@@ -1,0 +1,116 @@
+.modal-order {
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba($color: $color-default-black, $alpha: 0.3);
+  visibility: hidden;
+
+  z-index: 1;
+
+  
+  .js-modal-body {
+    position: relative;
+    width: fit-content;
+
+    display: flex;
+
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      border: none;
+      background-color: transparent;
+    }
+
+    .modal-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 72px 61px 89px 59px;
+
+      background-color: $color-white-second;
+
+      .modal-title {
+        margin-bottom: 50px;
+
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 43px;
+      }
+
+      .modal-wraper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+        gap: 20px;
+
+        .modal-input-sign {
+          position: absolute;
+          left: 15px;
+          top: 6px;
+
+          color: $color-default-orange;
+        }
+
+        input {
+          min-width: 270px;
+          padding: 16px 15px 15px 15px;
+
+          font-size: 14px;
+          border: 1px solid rgba($color: $color-default-black-second, $alpha: 0.3);
+        }
+
+        .modal-user-number {
+          padding-left: 26px;
+        }
+      }
+
+      .modal-btn {
+        padding: 18px 40px;
+
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        background-color: $color-default-orange;
+        color: $color-default-white;
+        border: none;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
+.is-active{
+  visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  .modal-order {
+    img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px){
+  .modal-order{
+    .js-modal-body{
+      .modal-form{
+        padding: 72px 20px 89px 20px;
+      }
+    }
+  }
+}

@@ -4,13 +4,13 @@ mixin questions()
       picture 
         source(srcset="/img/content/questions-background-picture-tablet.jpg" media="(max-width: 1024px)") 
         +img("content", "questions-background-picture", "jpg", 844, 455, "Море", "questions-background-picture")
-      form.questions__form
+      form.questions__form.js-form
         .questions__form-title У Вас остались вопросы?
         p.questions__form-decs Оставьте свой номер или e-mail и мы свяжемся с Вами
         .questions__form-inputs 
           .questions-wraper *
 
-          input.questions__form-input.questions__form-number(type="text" placeholder="Введите 10 цифр номера") 
+          input.questions__form-input.questions__form-number.js-form-number(type="text" placeholder="+7 Введите 10 цифр номера") 
           input.questions__form-input.questions__form-email(type="text" placeholder="E-mail")
         .questions__btn
           button.questions__btn-order-now

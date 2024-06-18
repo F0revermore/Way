@@ -158,7 +158,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .tour-places {
     .container {
 
@@ -172,12 +172,12 @@
       }
 
       .tour-places__places-list {
-
-
+        padding: 0;
+        row-gap: 16px;
         @include flex-grid-container(16px);
         .tour-places__places-list-content {
           position: relative;
-          @include flex-grid-item(20px, 1)
+          @include flex-grid-item(16px, 1)
         }
       }
     }

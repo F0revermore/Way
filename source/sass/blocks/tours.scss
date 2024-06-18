@@ -13,6 +13,13 @@
 
   .container {
     .tabs {
+      .tabs__nav-wraper{
+        margin-bottom: 80px;
+
+        overflow: auto;
+      }
+      
+
       .tabs__nav {
         position: relative;
 
@@ -20,7 +27,6 @@
         width: fit-content;
         gap: 99px;
         padding-bottom: 15px;
-        margin-bottom: 80px;
 
         .tabs__nav-item {
           font-size: 20px;
@@ -29,9 +35,11 @@
 
           color: $color-default-black-second;
           opacity: 30%;
+
+          cursor: pointer;
         }
 
-        .tabs__nav-item--active {
+        .active-tab {
           color: $color-default-orange;
           opacity: 100%;
         }
@@ -56,7 +64,7 @@
           display: none;
         }
 
-        .tabs__slide--active {
+        .active-tab {
           position: relative;
 
           display: flex;
@@ -103,6 +111,7 @@
 
             .tabs__tab-desc {
               max-width: 370px;
+              min-height: 308px;
               margin: 0;
               margin-bottom: 50px;
 
@@ -168,6 +177,7 @@
 
             .tabs__review-content {
               max-width: 322px;
+              min-height: 164px;
               margin: 0;
               margin-bottom: 35px;
 
@@ -216,10 +226,10 @@
               top: unset;
               bottom: 0;
 
-              width: calc(100% + 48px);
+              width: calc(100% + 64px);
               max-width: unset;
               height: 415px;
-              margin: 0 -24px;
+              margin: 0 -32px;
 
               object-fit: cover;
             }
@@ -245,6 +255,7 @@
 
               .tabs__tab-desc {
                 max-width: 726px;
+                min-height: 168px;
                 text-align: center;
               }
 
@@ -259,6 +270,10 @@
 
               margin-left: 0;
               padding: 30px 30px 0 30px;
+
+              .tabs__review-content {
+                min-height: 164px;
+              }
             }
           }
         }
@@ -267,7 +282,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .tours {
     margin-bottom: 45px;
 
@@ -295,6 +310,7 @@
 
               .tabs__tab-desc {
                 max-width: 288px;
+                min-height: 392px;
 
               }
 
@@ -319,6 +335,7 @@
 
               .tabs__review-content {
                 text-align: center;
+                min-height: 221px;
               }
 
               .tabs__review-user {

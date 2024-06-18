@@ -42,6 +42,7 @@
         font-size: 16px;
       }
 
+      
       .questions__form-inputs {
         position: relative;
 
@@ -56,23 +57,19 @@
 
           color: $color-default-orange;
         }
-
         .questions__form-input {
           min-width: 269px;
-          padding: 15px;
+          padding: 16px 15px 15px 15px;
 
           font-size: 14px;
           border: 1px solid rgba($color: $color-default-black-second, $alpha: 0.3);
         }
-
+        .questions__form-number{
+          padding-left: 26px;
+        }
         .questions__form-input::placeholder {
           font-size: 14px;
           color: $color-default-products;
-        }
-
-        .questions__form-number::placeholder::before {
-          content: "*123123131";
-          color: $color-default-orange;
         }
       }
 
@@ -136,7 +133,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .questions {
     margin-bottom: 70px;
     .container {
@@ -168,10 +165,6 @@
 
           .questions__form-input{
             min-width: 288px;
-            padding: 16px 15px 15px 15px;
-          }
-          .questions__form-number{
-            padding-left: 51px;
           }
         }
         .questions__btn {

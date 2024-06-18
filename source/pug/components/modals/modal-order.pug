@@ -1,0 +1,14 @@
+mixin modal-order()
+  .modal-order.js-modal(data-modal-body="order-tour")  
+    .js-modal-body 
+      button.modal-close-btn.js-close-modal(data-close-modal="order-tour") 
+        +icon("close-modal", 22, 22)
+      +img("content", "modal-image", "jpg", 338, 444, "Море", "modal-image")
+      form.modal-form.js-form
+        span.modal-title Купить тур 
+        .modal-wraper
+          .modal-input-sign *
+          input(type="text" placeholder="+7 Введите 10 цифр номера").modal-user-number.js-form-number
+          input(type="text" placeholder="E-mail")
+        button.modal-btn
+          span.modal-btn-text отправить

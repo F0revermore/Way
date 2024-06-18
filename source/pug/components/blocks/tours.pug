@@ -2,15 +2,16 @@ mixin tours()
   section.tours#tours
     +img("content", "slider-tab-background", "png", 1444, 1095, "Европа", "tabs-background")
     .container
-      .tabs 
-        .tabs__nav 
-          span.tabs__nav-item.tabs__nav-item--active Греция
-          span.tabs__nav-item Албания
-          span.tabs__nav-item Македония
-          span.tabs__nav-item Черногория
-          span.tabs__nav-item Хорватия
+      .tabs.js-tabs
+        .tabs__nav-wraper
+          .tabs__nav
+            .tabs__nav-item.active-tab(data-tab-title="Греция") Греция
+            .tabs__nav-item(data-tab-title="Албания") Албания
+            .tabs__nav-item(data-tab-title="Македония") Македония
+            .tabs__nav-item(data-tab-title="Черногория") Черногория
+            .tabs__nav-item(data-tab-title="Хорватия") Хорватия
         .tabs__slides 
-          .tabs__slide.tabs__slide--active 
+          .tabs__slide.active-tab(data-tab-body="Греция")
             picture
               source(srcset="/img/content/places-case-content1-tablet.jpg" media="(max-width: 1024px)") 
               +img("slides", "slide-background-image1", "jpg", 430, 596, "Греция", "slide-background-picture")
@@ -18,7 +19,7 @@ mixin tours()
               h2.tabs__description-title Греция
               p.tabs__tab-desc
                 |На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. 
-              button.tabs__btn-order-now
+              button.tabs__btn-order-now.js-modal-button(data-modal-button="order-tour")
                 span.tabs__button-text-content купить тур сейчас 
             .tabs__slide-review
               .tabs__review-title Отзывы
@@ -26,7 +27,7 @@ mixin tours()
               .tabs__review-user 
                 +img("slides", "slider-user-image1", "jpg", 38, 38, "Девушка")
                 .tabs__username Влада Голицина
-          .tabs__slide
+          .tabs__slide(data-tab-body="Албания")
             picture
               source(srcset="/img/content/places-case-content1-tablet.jpg" media="(max-width: 1024px)") 
               +img("slides", "slide-background-image2", "jpg", 430, 596, "Албания", "slide-background-picture")
@@ -34,7 +35,7 @@ mixin tours()
               h2.tabs__description-title Албания
               p.tabs__tab-desc
                 |В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.        
-              button.tabs__btn-order-now
+              button.tabs__btn-order-now.js-modal-button(data-modal-button="order-tour")
                 span.tabs__button-text-content купить тур сейчас 
             .tabs__slide-review
               .tabs__review-title Отзывы
@@ -42,7 +43,7 @@ mixin tours()
               .tabs__review-user 
                 +img("slides", "slider-user-image2", "jpg", 38, 38, "Девушка")
                 .tabs__username Маришка
-          .tabs__slide
+          .tabs__slide(data-tab-body="Македония")
             picture
               source(srcset="/img/content/places-case-content1-tablet.jpg" media="(max-width: 1024px)") 
               +img("slides", "slide-background-image3", "jpg", 430, 596, "Македония", "slide-background-picture")
@@ -50,7 +51,7 @@ mixin tours()
               h2.tabs__description-title Македония
               p.tabs__tab-desc
                 |В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.        
-              button.tabs__btn-order-now
+              button.tabs__btn-order-now.js-modal-button(data-modal-button="order-tour")
                 span.tabs__button-text-content купить тур сейчас 
             .tabs__slide-review
               .tabs__review-title Отзывы
@@ -58,7 +59,7 @@ mixin tours()
               .tabs__review-user 
                 +img("slides", "slider-user-image3", "jpg", 38, 38, "Мужчина")
                 .tabs__username Михаил Кузьмин
-          .tabs__slide
+          .tabs__slide(data-tab-body="Черногория")
             picture
               source(srcset="/img/content/places-case-content1-tablet.jpg" media="(max-width: 1024px)") 
               +img("slides", "slide-background-image4", "jpg", 430, 596, "Черногория", "slide-background-picture")
@@ -66,7 +67,7 @@ mixin tours()
               h2.tabs__description-title Черногория
               p.tabs__tab-desc
                 |Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.        
-              button.tabs__btn-order-now
+              button.tabs__btn-order-now.js-modal-button(data-modal-button="order-tour")
                 span.tabs__button-text-content купить тур сейчас 
             .tabs__slide-review
               .tabs__review-title Отзывы
@@ -74,7 +75,7 @@ mixin tours()
               .tabs__review-user 
                 +img("slides", "slider-user-image4", "jpg", 38, 38, "Девушка")
                 .tabs__username Анастасия Мей
-          .tabs__slide
+          .tabs__slide(data-tab-body="Хорватия")
             picture
               source(srcset="/img/content/places-case-content1-tablet.jpg" media="(max-width: 1024px)") 
               +img("slides", "slide-background-image5", "jpg", 430, 596, "Хорватия", "slide-background-picture")
@@ -82,7 +83,7 @@ mixin tours()
               h2.tabs__description-title Хорватия
               p.tabs__tab-desc
                 |В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.        
-              button.tabs__btn-order-now
+              button.tabs__btn-order-now.js-modal-button(data-modal-button="order-tour")
                 span.tabs__button-text-content купить тур сейчас 
             .tabs__slide-review
               .tabs__review-title Отзывы
