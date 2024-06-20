@@ -7,6 +7,8 @@ import AnchorLinks from './modules/AnchorLinks.js';
 import Tabs from './modules/Tabs.js';
 import Modal from './modules/Modal.js';
 import BurgerMenu from './modules/BurgerMenu.js';
+import PhoneMask from './modules/PhoneMask.js';
+import FormValidation from './modules/FormValidation.js';
 
 // ---------------------------------
 
@@ -35,6 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
     new Tabs();
     new Modal();
     new BurgerMenu();
+    new PhoneMask();
+    new FormValidation();
   });
 });
 

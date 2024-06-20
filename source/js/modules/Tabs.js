@@ -17,7 +17,6 @@ export default class ToursTabs {
           }
 
           element.classList.add('active-tab');
-          console.log(element.dataset.tabTitle);
           document.querySelector(`[data-tab-body="${element.dataset.tabTitle}"]`).classList.add('active-tab');
           
         })

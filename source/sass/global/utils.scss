@@ -72,3 +72,150 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.form-success{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.72;
+
+  visibility: hidden;
+  background-color: $color-white-second;
+
+  .form-success-close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+  }
+}
+.questions__form {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  padding: 50px;
+
+  background-color: $color-default-white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+
+  .questions__form-title {
+    margin-bottom: 11px;
+
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .questions__form-decs {
+    margin: 0;
+    margin-bottom: 9px;
+
+    font-size: 16px;
+  }
+
+  
+  .questions__form-inputs {
+    position: relative;
+
+    display: flex;
+    gap: 19px;
+    margin-bottom: 25px;
+
+
+    .questions-wraper {
+      position: absolute;
+      left: 15px;
+      top: 20px;
+
+      color: $color-default-orange;
+    }
+
+    .questions-input-wraper{
+      display: flex;
+      flex-direction: column;
+      
+      .questions-input-incorrect-data{
+        font-size: 12px;
+        line-height: 15px;
+        color: $color-default-orange;
+        
+        visibility: hidden;
+      }
+
+      .questions__form-input {
+        min-width: 269px;
+        padding: 16px 15px 15px 15px;
+
+        font-size: 14px;
+        border: 1px solid rgba($color: $color-default-black-second, $alpha: 0.3);
+      }
+
+      .questions__form-number{
+        padding-left: 26px;
+      }
+
+      .questions__form-input::placeholder {
+        font-size: 14px;
+        color: $color-default-products;
+      }
+
+      &.invalid{
+        input{
+          outline: 1px solid $color-default-orange;
+        }
+        .questions-input-incorrect-data{
+          visibility: visible;
+        }
+      }
+
+    }
+    
+  }
+
+  .questions__btn {
+    .questions__btn-order-now {
+      display: flex;
+      align-items: center;
+      padding: 18px 40px;
+
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      background-color: $color-default-orange;
+      color: $color-default-white;
+      border: none;
+
+      cursor: pointer;
+    }
+
+    .questions__btn-order-now:hover {
+      background-color: $color-hover-button;
+    }
+  }
+  &.success{
+    .form-success{
+      visibility: visible;
+    }
+  }
+}

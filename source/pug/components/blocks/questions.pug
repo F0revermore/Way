@@ -4,14 +4,21 @@ mixin questions()
       picture 
         source(srcset="/img/content/questions-background-picture-tablet.jpg" media="(max-width: 1024px)") 
         +img("content", "questions-background-picture", "jpg", 844, 455, "Море", "questions-background-picture")
-      form.questions__form.js-form
+      form.questions__form(data-form-validation)
+        .form-success.js-form-success Форма успешно отправлена,<br> спасибо! :)
+          button.form-success-close-btn.js-close-btn(type="button")
+            +icon("close-modal", 22, 22)
         .questions__form-title У Вас остались вопросы?
         p.questions__form-decs Оставьте свой номер или e-mail и мы свяжемся с Вами
         .questions__form-inputs 
           .questions-wraper *
-
-          input.questions__form-input.questions__form-number.js-form-number(type="text" placeholder="+7 Введите 10 цифр номера") 
-          input.questions__form-input.questions__form-email(type="text" placeholder="E-mail")
+          .questions-input-wraper(data-mask-parent)
+            span.questions-input-incorrect-data.js-wrong-number Данные не верны
+            input.questions__form-input.questions__form-number(type="text" placeholder="+7 Введите 10 цифр номера" data-type='phone')
+          .questions-input-wraper
+            span.questions-input-incorrect-data.js-wrong-email Данные не верны
+            input.questions__form-input.questions__form-email(type="email" placeholder="E-mail" data-type='email')
         .questions__btn
           button.questions__btn-order-now
             span.button-text-content отправить 
+      

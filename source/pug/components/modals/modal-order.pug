@@ -4,11 +4,19 @@ mixin modal-order()
       button.modal-close-btn.js-close-modal(data-close-modal="order-tour") 
         +icon("close-modal", 22, 22)
       +img("content", "modal-image", "jpg", 338, 444, "Море", "modal-image")
-      form.modal-form.js-form
-        span.modal-title Купить тур 
-        .modal-wraper
-          .modal-input-sign *
-          input(type="text" placeholder="+7 Введите 10 цифр номера").modal-user-number.js-form-number
-          input(type="text" placeholder="E-mail")
-        button.modal-btn
-          span.modal-btn-text отправить
+      form.questions__form(data-form-validation)
+        .form-success.js-form-success Форма успешно отправлена,<br> спасибо! :)
+          button.form-success-close-btn.js-close-btn(type="button")
+            +icon("close-modal", 22, 22)
+        .questions__form-title Купить тур
+        .questions__form-inputs 
+          .questions-wraper *
+          .questions-input-wraper(data-mask-parent)
+            span.questions-input-incorrect-data.js-wrong-number Данные не верны
+            input.questions__form-input.questions__form-number(type="text" placeholder="+7 Введите 10 цифр номера" data-type='phone')
+          .questions-input-wraper
+            span.questions-input-incorrect-data.js-wrong-email Данные не верны
+            input.questions__form-input.questions__form-email(type="email" placeholder="E-mail" data-type='email')
+        .questions__btn
+          button.questions__btn-order-now
+            span.button-text-content отправить
